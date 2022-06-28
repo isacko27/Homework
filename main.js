@@ -1,5 +1,8 @@
-let usuario = document.getElementById("nombres").value
-let password = document.getElementById("nombres").value
+const usuario = document.getElementById("nombres")
+const password = document.getElementById("nombres")
+const incorrect = document.querySelector(".incorrect")
+const buttons = [...document.querySelectorAll(".controls")];
+console.log
 
 let users = {
     usuario: "123",
@@ -8,8 +11,18 @@ let users = {
 
 
 function login() {
-    if (usuario.includes(users.usuario) && password.includes(users.password)) {
-        
+    let us = usuario.value
+    let pass = password.value
+    console.log(us + pass)
+    if (us.includes(users.usuario) && pass.includes(users.password)) {
+        console.log("incluye")
+        location.href ="ingreso.html";
 
+    }   else {
+        console.log("No incluye")
+        incorrect.removeAttribute("hidden")
+        buttons[0].classList.add("controlsfail")
+        buttons[1].classList.add("controlsfail")
     }
+    
 }

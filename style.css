@@ -37,6 +37,10 @@ body {
   color: white;
 }
 
+.controlsfail {
+  border: 1px solid #c51f1f !important;
+}
+
 .form-register p {
   height: 40px;
   text-align: center;
@@ -63,4 +67,8 @@ body {
   margin: 16px 0;
   font-size: 16px;
   cursor: pointer;
+}
+
+.incorrect {
+  color: #c51f1f;
 }

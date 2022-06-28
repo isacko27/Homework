@@ -10,10 +10,12 @@
 <body>
   <section class="form-register">
     <h4>Formulario Registro</h4>
+    <input type="hidden" name="data" class="data">
     <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
     <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <span class="incorrect" hidden>Nombre o Contraseña Incorrecta</span>
     <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-    <a href="ingreso.html" ><input class="botons" type="submit" value="Ingreso"></a>
+    <input class="botons" onclick="login()" type="submit" value="Ingreso">
     <p><a href="#">¿Ya tengo Cuenta?</a></p>
   </section> 
 <script src="main.js"></script>

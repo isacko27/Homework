@@ -110,3 +110,34 @@ body {
   background: #044489;
 
 }
+ .moneda{
+  position: relative;
+  top: -3rem;
+  right: -14rem;
+  margin: 0;
+  width: 100px;
+  color: #1f53c5;
+  background-color: #24303c;
+  border-color: #1f53c5;
+
+ }
+
+ .error {
+  color: #c51f1f;
+  opacity: 70%;
+  position: relative;
+ }
+
+ .aside{
+  background-color: #243e5d;
+  width: 30rem;
+  height: 10rem;
+  float: right;
+ }
+
+ .aside #response p {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 40px;
+  color: #3abf4e;
+ }
